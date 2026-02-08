@@ -1,0 +1,47 @@
+[debug] [2026-02-08T02:03:51.256Z] ----------------------------------------------------------------------
+[debug] [2026-02-08T02:03:51.262Z] Command:       /opt/homebrew/Cellar/node/25.5.0/bin/node /opt/homebrew/bin/firebase init hosting
+[debug] [2026-02-08T02:03:51.262Z] CLI Version:   15.5.1
+[debug] [2026-02-08T02:03:51.262Z] Platform:      darwin
+[debug] [2026-02-08T02:03:51.262Z] Node Version:  v25.5.0
+[debug] [2026-02-08T02:03:51.262Z] Time:          Sat Feb 07 2026 18:03:51 GMT-0800 (Pacific Standard Time)
+[debug] [2026-02-08T02:03:51.262Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/leodirodrik/leodrik-advisory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2026-02-08T02:04:15.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-02-08T02:04:15.317Z] > authorizing via signed-in user (leodirodrik@gmail.com)
+[debug] [2026-02-08T02:04:20.714Z] Checked if tokens are valid: true, expires at: 1770519581837
+[debug] [2026-02-08T02:04:20.715Z] Checked if tokens are valid: true, expires at: 1770519581837
+[debug] [2026-02-08T02:04:20.719Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2026-02-08T02:04:20.720Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"firebase init hosting"}
+[debug] [2026-02-08T02:04:21.518Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2026-02-08T02:04:21.518Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"fir-init-hosting-f3a3e"}
+[debug] [2026-02-08T02:07:17.715Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:508:20)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1327:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:284:20)
+    at ReadStream.emit (node:events:520:22)
+    at emitKeys (node:internal/readline/utils:371:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:508:20)
+    at addChunk (node:internal/streams/readable:564:12)
+[error] 
+[error] Error: An unexpected error has occurred.

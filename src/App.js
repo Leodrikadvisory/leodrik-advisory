@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center text-center p-10">
+      <h1 className="text-5xl font-bold mb-6">Leodrik Advisory</h1>
+      <p className="text-xl text-gray-300 mb-8">
+        Strategy • Consulting • Systems • Growth
+      </p>
+
+      <div className="space-x-4">
+        <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200">
+          Get Started
+        </button>
+
+        <button className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black">
+          Contact
+        </button>
+      </div>
     </div>
   );
 }
 
-export default App;
